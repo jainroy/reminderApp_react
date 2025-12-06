@@ -10,7 +10,7 @@ body {
 }
 
 /* Main centered card */
-.container{
+.container {
     width: 90%;
     max-width: 600px;
     padding: 35px;
@@ -21,7 +21,7 @@ body {
     border-radius: 18px;
 
     /* Glow + shadow to stand out */
-    box-shadow: 
+    box-shadow:
         0 8px 25px rgba(0, 0, 0, 0.35),
         0 0 10px rgba(255, 255, 255, 0.15),
         inset 0 0 25px rgba(255, 255, 255, 0.05);
@@ -32,11 +32,18 @@ body {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(15px);}
-    to {opacity: 1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-h1{
+h1 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 25px;
@@ -44,73 +51,73 @@ h1{
 }
 
 /* Input Section */
-.input-container{
+.input-container {
     display: flex;
     gap: 12px;
     margin-bottom: 25px;
     width: 100%;
 }
 
-input{
+input {
     flex: 1;
     padding: 14px;
     font-size: 18px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 12px;
-    background: rgba(255,255,255,0.22);
+    background: rgba(255, 255, 255, 0.22);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     color: #fff;
     transition: 0.25s ease;
 }
 
-input::placeholder{
-    color: rgba(255,255,255,0.75);
+input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
 }
 
-input:focus{
-    background: rgba(255,255,255,0.3);
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
     border-color: #fff;
     outline: none;
     transform: scale(1.02);
 }
 
 /* Add Button */
-.add-btn{
+.add-btn {
     padding: 14px 20px;
     font-size: 18px;
     font-weight: 600;
     border-radius: 12px;
     background: rgba(0, 198, 255, 0.6);
     backdrop-filter: blur(6px);
-    border: 1px solid rgba(255,255,255,0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     color: #fff;
     cursor: pointer;
     transition: 0.25s ease;
 }
 
-.add-btn:hover{
+.add-btn:hover {
     background: rgba(0, 155, 205, 0.7);
     transform: translateY(-2px) scale(1.03);
 }
 
 /* Reminder List */
-.reminder-list{
+.reminder-list {
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-.reminder-list li{
+.reminder-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px;
     margin-bottom: 10px;
 
-    background: rgba(255,255,255,0.18);
-    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
 
     backdrop-filter: blur(10px);
@@ -122,17 +129,17 @@ input:focus{
     animation: slideIn 0.4s ease;
 }
 
-.delete-btn{
+.delete-btn {
     padding: 8px 14px;
     border-radius: 10px;
     color: white;
     background: rgba(255, 80, 80, 0.7);
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
     transition: 0.25s ease;
 }
 
-.delete-btn:hover{
+.delete-btn:hover {
     background: rgba(220, 50, 50, 0.85);
     transform: scale(1.08);
 }
@@ -165,9 +172,21 @@ input:focus{
     }
 
     input {
-        font-size: 16px;
-        padding: 12px;
         width: 100%;
+        flex: 1;
+        padding: 12px;
+        font-size: 18px;
+
+        background: rgba(255, 255, 255, 0.22);
+        backdrop-filter: blur(8px);
+        color: #fff;
+
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+        outline: none;
+
+        box-sizing: border-box;
+        /* IMPORTANT */
     }
 
     .add-btn {
